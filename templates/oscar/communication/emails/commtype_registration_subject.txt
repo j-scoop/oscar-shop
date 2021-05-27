@@ -1,0 +1,2 @@
+{% load i18n %}
+Oscar Shop: {% trans 'Thank you for registering.' %}

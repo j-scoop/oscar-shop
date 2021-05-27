@@ -1,0 +1,11 @@
+{% extends 'oscar/communication/emails/base.html' %}
+{% load i18n %}
+
+{% block footer %}
+    <tr>
+        <td class="content-block">
+            <p>{% trans "Thanks for using our site!" %}</p>
+            <p>{% blocktrans with name=site.name %}The {{ name }} team{% endblocktrans %}</p>
+        </td>
+    </tr>
+{% endblock %}

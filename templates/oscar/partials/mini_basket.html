@@ -1,0 +1,14 @@
+{% load currency_filters %}
+{% load i18n %}
+
+<div class="col-sm-3 basket-mini text-right hidden-xs">
+    <span class="btn-group">
+        <a class="btn btn-default" href="{% url 'basket:summary' %}">{% trans "Basket" %}</a>
+        <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu pull-right">
+            <li>{% include "oscar/basket/partials/basket_quick.html" %}</li>
+        </ul>
+    </span>
+</div>
